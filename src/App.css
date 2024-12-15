@@ -1,0 +1,76 @@
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  height: 500px;
+}
+.pageNumber{
+  margin-top: 20px;
+  margin-left: 470px;
+  font-weight: bold;
+}
+.table {
+  border: 2px solid;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table tr:nth-child(odd){background-color: #f2f2f2;}
+
+.table th,
+.table td {
+  border: 1px solid grey;
+  padding: 15px;
+  text-align: left;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span{
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 4px;
+  font-weight: bold;
+}
+.pagination > span:hover:not(.pagination_disable) {
+  background-color: black;
+  color: white;
+}
+
+.pagination .pagination_disable {
+  cursor: auto;
+  color: #D0D0D0;
+  border: 1px solid #D0D0D0;
+}
+select {
+  float: right;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 3rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+select>option {
+  color: black;
+  background-color: white;
+}
+select:hover {background-color: black; color: white;   cursor: pointer;}
